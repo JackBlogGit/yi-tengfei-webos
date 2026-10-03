@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "defaultSourceId": "aliyun",
+  "sources": [
+    {
+      "id": "aliyun",
+      "kind": "manifest",
+      "label": "阿里云盘（直连）",
+      "note": "把云盘分享转出的直链逐条填进 entries 的 url 就行；以 / 开头表示站内相对路径。页面不保存任何账号信息。",
+      "entries": [
+        { "path": "/照片", "kind": "dir" },
+        {
+          "path": "/照片/示例-01.jpg",
+          "kind": "file",
+          "size": 113017,
+          "url": "/demo/photo-01.jpg",
+          "thumb": "/demo/photo-01.jpg",
+          "mtime": "2026-10-03T12:00:00"
+        },
+        {
+          "path": "/照片/示例-02.jpg",
+          "kind": "file",
+          "size": 78312,
+          "url": "/demo/photo-02.jpg",
+          "thumb": "/demo/photo-02.jpg",
+          "mtime": "2026-10-03T12:00:00"
+        },
+        { "path": "/音乐", "kind": "dir" },
+        {
+          "path": "/音乐/示例音频.wav",
+          "kind": "file",
+          "size": 74132,
+          "url": "/demo/tone.wav",
+          "mtime": "2026-10-03T12:00:00"
+        },
+        { "path": "/待接入", "kind": "dir" },
+        {
+          "path": "/待接入/把 url 换成你的阿里云盘直链.mp4",
+          "kind": "file",
+          "url": "REPLACE_WITH_ALIYUN_DIRECT_LINK",
+          "mtime": "2026-10-03T12:00:00"
+        }
+      ]
+    },
+    {
+      "id": "alist",
+      "kind": "alist",
+      "label": "Alist（浏览器直连，可选）",
+      "note": "把自己的 Alist 地址填进 endpoint 即生效；需该站点允许跨域读取且挂载点匿名可读。",
+      "endpoint": ""
+    }
+  ]
+}

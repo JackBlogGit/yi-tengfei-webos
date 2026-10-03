@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.env
+.env.*.local
+# 一次性验收产物：headless Edge 的临时 profile 与截图不入库，脚本 output/*.mjs 保留
+output/edge-profile*/
+output/*.png
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
